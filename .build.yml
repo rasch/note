@@ -2,6 +2,7 @@ image: alpine/latest
 packages:
   - nodejs
   - npm
+  - shellcheck
 sources:
   - https://git.sr.ht/~rasch/note
 environment:
@@ -9,6 +10,8 @@ environment:
 secrets:
   - 2b8f0d2a-cab9-451d-b684-6b89582fb7b0 # NPM publish token
 tasks:
+  - lint: |
+      shellcheck note.sh
   - stop_if_not_release: |
       cd "$project"
       git describe --exact-match HEAD || complete-build
