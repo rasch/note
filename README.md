@@ -29,4 +29,8 @@ some text on line one
 and line two
 line 3, etc.
 EOF
+
+# or use a quoted string with literal line breaks
+n 'hello, i am a multi-
+line string'
 ```
