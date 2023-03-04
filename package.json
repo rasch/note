@@ -1,9 +1,12 @@
 {
-  "name": "note",
+  "name": "@rasch/note",
   "version": "0.1.0",
   "description": "ultra minimal shell script for CLI notes",
   "type": "module",
-  "bin": { "n": "note.sh" },
+  "bin": {
+    "n": "note.sh",
+    "note": "note.sh"
+  },
   "files": [
     "note.sh"
   ],
