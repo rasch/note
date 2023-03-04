@@ -1,0 +1,23 @@
+{
+  "name": "note",
+  "version": "0.1.0",
+  "description": "ultra minimal shell script for CLI notes",
+  "type": "module",
+  "bin": { "n": "note.sh" },
+  "files": [
+    "note.sh"
+  ],
+  "keywords": [
+    "note",
+    "notes",
+    "memo",
+    "notepad",
+    "notebook"
+  ],
+  "author": "Randy Schneck <i@rasch.co>",
+  "license": "0BSD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rasch/note.git"
+  }
+}
